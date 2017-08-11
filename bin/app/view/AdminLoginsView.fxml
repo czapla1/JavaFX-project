@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AdminLoginsController">
+   <children>
+      <Label layoutX="298.0" layoutY="19.0" text="Logins view" />
+      <TableView fx:id="tbLogins" layoutX="23.0" layoutY="57.0" prefHeight="328.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="tbcId" prefWidth="75.0" text="Id" />
+            <TableColumn fx:id="tbcId_employee" prefWidth="111.0" text="Id_Employee" />
+            <TableColumn fx:id="tbcLogin" prefWidth="75.0" text="Login" />
+            <TableColumn fx:id="tbcPass" prefWidth="98.0" text="Password" />
+            <TableColumn fx:id="tbcAccess" prefWidth="93.0" text="Access" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblLogin" disable="true" layoutX="492.0" layoutY="133.0" text="Login" />
+      <Label fx:id="lblPass" disable="true" layoutX="493.0" layoutY="177.0" text="Pass" />
+      <Label fx:id="lblAccess" disable="true" layoutX="493.0" layoutY="213.0" text="Access" />
+      <TextField fx:id="txtLogin" disable="true" layoutX="633.0" layoutY="120.0" />
+      <TextField fx:id="txtPass" disable="true" layoutX="633.0" layoutY="167.0" />
+      <TextField fx:id="txtAccess" disable="true" layoutX="633.0" layoutY="214.0" />
+      <Button fx:id="btnInsert2" disable="true" layoutX="777.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#insert2" prefHeight="44.0" prefWidth="91.0" text="insert" />
+      <Button fx:id="btnUpdate2" disable="true" layoutX="777.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#update2" text="update" />
+      <Button fx:id="btnShow" layoutX="23.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#show" text="show" />
+      <Button fx:id="btnInsert" layoutX="97.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#insert" text="insert" />
+      <Button fx:id="btnUpdate" layoutX="174.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#update" text="update" />
+      <Button fx:id="btnDelete" layoutX="265.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#delete" text="delete" />
+      <Button fx:id="btnBack" layoutX="798.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#back" text="back" />
+      <Label fx:id="lblIdEmployee" disable="true" layoutX="494.0" layoutY="77.0" text="Id_Empl" />
+      <TextField fx:id="txtIdEmployee" disable="true" layoutX="633.0" layoutY="70.0" />
+   </children>
+</AnchorPane>

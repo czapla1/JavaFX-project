@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="465.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AdminEmployeesController">
+   <children>
+      <TableView fx:id="tbEmployees" layoutX="26.0" layoutY="49.0" prefHeight="314.0" prefWidth="301.0">
+        <columns>
+          <TableColumn fx:id="tbcID" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="tbcFirstname" prefWidth="102.0" text="Firstname" />
+            <TableColumn fx:id="tbcLastname" prefWidth="123.0" text="Lastname" />
+        </columns>
+      </TableView>
+      <Label layoutX="257.0" layoutY="14.0" text="Employees view" />
+      <Button fx:id="btnShow" layoutX="26.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#show" text="show" />
+      <Button fx:id="btnInsert" layoutX="101.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#insert" text="insert" />
+      <Button fx:id="btnUpdate" layoutX="178.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#update" text="update" />
+      <TextField fx:id="txtFirstname" disable="true" layoutX="480.0" layoutY="49.0" prefHeight="44.0" prefWidth="121.0" />
+      <TextField fx:id="txtLastname" disable="true" layoutX="480.0" layoutY="94.0" prefHeight="44.0" prefWidth="121.0" />
+      <Label fx:id="lblFirstname" disable="true" layoutX="371.0" layoutY="53.0" text="Firstname" />
+      <Label fx:id="lblLastname" disable="true" layoutX="371.0" layoutY="98.0" text="Lastname" />
+      <Button fx:id="btnInsert2" disable="true" layoutX="497.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#insert2" prefHeight="44.0" prefWidth="105.0" text="insert" />
+      <Button fx:id="btnUpdate2" disable="true" layoutX="497.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#update2" prefHeight="44.0" prefWidth="105.0" text="update" />
+      <Button fx:id="btnBack" layoutX="584.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#back" text="back" />
+      <Button fx:id="btnDelete" layoutX="269.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#delete" text="delete" />
+   </children>
+</AnchorPane>
